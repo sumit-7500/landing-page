@@ -1,15 +1,11 @@
-/* ============================================
-   RESET - sab elements ki default styling hatao
-   ============================================ */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ============================================
-   CSS VARIABLES - colors aur sizes ek jagah
-   ============================================ */
+
 :root {
   --orange: #fd6f00;
   --bg: #faf8f5;
@@ -20,9 +16,7 @@
   --white: #ffffff;
 }
 
-/* ============================================
-   BASE STYLES
-   ============================================ */
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
@@ -34,10 +28,6 @@ img {
   max-width: 100%;
   display: block;
 }
-
-/* ============================================
-   ORANGE BUTTON - sab jagah use hoga
-   ============================================ */
 .btn-orange {
   display: inline-block;
   background: var(--orange);
@@ -54,10 +44,6 @@ img {
   opacity: 0.9;
 }
 
-/* ============================================
-   SECTION HEADER - Skills, Projects, Contact
-   ke upar heading aur description
-   ============================================ */
 .section-header {
   text-align: center;
   max-width: 700px;
@@ -77,9 +63,7 @@ img {
   font-size: 1rem;
 }
 
-/* ============================================
-   HEADER / NAVBAR
-   ============================================ */
+
 .header {
   background: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -132,9 +116,6 @@ img {
   color: var(--orange);
 }
 
-/* ============================================
-   HERO SECTION
-   ============================================ */
 .hero-section {
   max-width: 1180px;
   margin: 0 auto;
@@ -209,9 +190,6 @@ img {
   color: var(--orange);
 }
 
-/* ============================================
-   SKILLS SECTION
-   ============================================ */
 .skills-section {
   max-width: 1180px;
   margin: 0 auto;
@@ -250,10 +228,6 @@ img {
   font-size: 0.92rem;
   line-height: 1.7;
 }
-
-/* ============================================
-   PROJECTS SECTION
-   ============================================ */
 .projects-section {
   max-width: 1180px;
   margin: 0 auto;
@@ -407,9 +381,6 @@ img {
   border-radius: 50px;
 }
 
-/* ============================================
-   MOBILE - 720px se chhota screen
-   ============================================ */
 @media (max-width: 720px) {
 
   /* Hamburger button dikhao */
@@ -482,9 +453,6 @@ img {
 
 }
 
-/* ============================================
-   CHHOTI MOBILE - 480px se chhota
-   ============================================ */
 @media (max-width: 480px) {
   .section-header h2 {
     font-size: 1.7rem;
