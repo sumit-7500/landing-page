@@ -2,146 +2,163 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>sumit</h1>
-        <div class="menu">
-            <a class="" href="#"> home </a>
-            <a class="" href="#"> about me </a>
-           
-            <a class="" href="#"> projects </a>
-            
-            <a class="" href="#"> contact </a>
-            <button class="header-button">download cv</button>
-        </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="logo">sumit</h1>
+
+      <!-- Hamburger button - sirf mobile par dikhega -->
+      <button class="nav-toggle" aria-label="Menu kholo/bando">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Navigation menu -->
+      <nav class="menu" id="main-menu">
+        <a href="#home">home</a>
+        <a href="#skills">about me</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+        <button class="btn-orange">download cv</button>
+      </nav>
     </div>
-    <div class="hero-section">
+  </header>
 
-        <div class="contact-sec">
-            <h4 class="box1">Hi I am</h4>
-            <h1 class="box2">Sumit Chauhan</h1>
-            <H2 CLASS="box3">UI & UX</H2>
-            <h2 class="box4">Designer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque optio et<br> delectus, nesciunt,
-                eius
-                voluptatum ea velit vero dolore eligendi soluta ad modi<br> distinctio repudiandae commodi porro
-                iste.
-                Hic, exercitationem?</p>
-            <br>
-            <button class="hero-button">Hire me</button>
-        </div>
-        <div class="image-sec">
-            <div class="sec2">
-                <img src="Group 2 (3).png" alt="">
-            </div>
-            <div class="icon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-        </div>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section" id="home">
+    <div class="hero-text">
+      <h4 class="tag-line">Hi I am</h4>
+      <h1 class="hero-name">Sumit Chauhan</h1>
+      <h2 class="hero-role">UI &amp; UX Designer</h2>
+      <p class="hero-desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque optio et delectus, nesciunt, eius voluptatum ea velit vero dolore eligendi soluta ad modi distinctio.
+      </p>
+      <button class="btn-orange">Hire me</button>
     </div>
-    <!-- <div class="about-me-section">
-        <div class="about-me-inner-section">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eius asperiores<br> necessitatibus
-                impedit consequatur<br> doloribus unde perspiciatis? Quasi beatae quia vitae veritatis libero<br>
-                numquam officiis exercitationem distinctio sint? Animi, nostrum.</p>
-        </div>
-        <div class="img-sec">
-            <img src="Group 2 (3).png" alt="">
-        </div>
-    </div> -->
-    <div class="skills-section">
-        <div class="skill-tittle">
-            <h2>Skills</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut molestias magni odit perferendis
-                laudantium<br> eos quis harum cumque dolorum labore assumenda sit quod</p>
-        </div>
 
-        <div class="skill-box">
-            <div class="box">
-                <i class="fa-brands fa-html5"></i>
-                <h2>HTML5</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto ad similique ipsa
-                    voluptatibus tenetur impedit hic! Molestiae blanditiis</p>
-
-
-            </div>
-            <div class="box">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h2>CSS3</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nec, aut eligendi pariatur corporis
-                    voluptate optio suscipit dolor mole</p>
-            </div>
-            <div class="box">
-                <i class="fa-brands fa-github"></i>
-                <h2>GIT&GITHUB</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi voluptas repellat
-                    accusantium cosider any be leran to bty </p>
-            </div>
-            <div class="box">
-                <i class="fa-solid fa-file-excel"></i>
-                <h2>EXCEL</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla provident quae. Natus non vero
-                    fugit culpa repellat obcaecati</p>
-            </div>
-        </div>
-     <section style="padding:60px 40px">
-  
-  <div class="section-title">My Projects</div>
-  <p class="section-sub">A selection of real work — from clones to original designs — built to sharpen my skills and ship things that look great.</p>
-  <div class="project-grid">
-    <div class="project-card">
-      <div class="project-img">
-        <span class="project-img-label">Amazon</span>
-        <span class="project-tag">Web design</span>
-      </div>
-      <div class="project-body">
-        <h3>Amazon Clone Page</h3>
-        <p>Built a fully responsive Amazon clone using HTML and CSS. Designed the homepage with a navigation bar, product sections, and banner layout while focusing on real-world front-end techniques.</p>
-        <a class="project-link" href="#">View project <i class="fa-solid fa-arrow-right" style="font-size:11px"></i></a>
+    <div class="hero-image">
+      <img src="Group 2 (3).png" alt="Sumit ki photo">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
-    <div class="project-card" style="opacity:0.5">
-      <div class="project-img" style="background:linear-gradient(135deg,#e0e0e0,#c8c8c8)">
-        <span class="project-img-label" style="color:#888">Next</span>
-        <span class="project-tag" style="color:#888">Coming soon</span>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills-section" id="skills">
+    <div class="section-header">
+      <h2>Skills</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut molestias magni odit perferendis laudantium eos quis harum cumque dolorum.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto ad similique ipsa voluptatibus tenetur impedit hic!</p>
       </div>
-      <div class="project-body">
-        <h3>More coming soon</h3>
-        <p>New projects are in the works. Check back shortly or reach out to discuss a collaboration.</p>
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nec, aut eligendi pariatur corporis voluptate optio suscipit dolor.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-brands fa-github"></i>
+        <h3>Git &amp; GitHub</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi voluptas repellat accusantium cosider any learn.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-file-excel"></i>
+        <h3>Excel</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla provident quae. Natus non vero fugit culpa repellat.</p>
       </div>
     </div>
-  </div>
-</section>
-   <section class="contact-section">
-    <div class="contact-header">
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisiciipsum dolor, sit amet consectetur<br> adipisicing elit. Possimus, eum.
-        </p>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <h2>My Projects</h2>
+      <p>A selection of real work — from clones to original designs — built to sharpen my skills and ship things that look great.</p>
     </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img">
+          <span class="project-label">Amazon</span>
+          <span class="project-tag">Web design</span>
+        </div>
+        <div class="project-body">
+          <h3>Amazon Clone Page</h3>
+          <p>Built a fully responsive Amazon clone using HTML and CSS. Designed the homepage with a navigation bar, product sections, and banner layout.</p>
+          <a href="#" class="project-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card coming-soon">
+        <div class="project-img grey-img">
+          <span class="project-label grey-label">Next</span>
+          <span class="project-tag grey-tag">Coming soon</span>
+        </div>
+        <div class="project-body">
+          <h3>More coming soon</h3>
+          <p>New projects are in the works. Check back shortly or reach out to discuss a collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum voluptatum officiis.</p>
+    </div>
+
     <div class="contact-form-box">
-        <div class="contact-form">
-            <input type="text" placeholder="full name">
-            <input type="text" placeholder="phone number">
-            
-            <input type="text" placeholder="enter your email">
-            <textarea placeholder=" address">
-            </textarea>
-            <button>submit</button>
-           
-        </div>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+        <input type="email" placeholder="Email address">
+        <input type="tel" placeholder="Phone number">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn-orange submit-btn">Submit</button>
+      </form>
     </div>
-   </section>
-</body>
+  </section>
 
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Hamburger menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('main-menu');
+
+    navToggle.addEventListener('click', function () {
+      menu.classList.toggle('menu-open');
+    });
+
+    // Menu band karo jab koi link click kare (mobile par)
+    const menuLinks = menu.querySelectorAll('a');
+    menuLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('menu-open');
+      });
+    });
+  </script>
+
+</body>
 </html>
