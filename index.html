@@ -40,7 +40,7 @@
     <div class="hero-text">
       <h4 class="tag-line">Hi I am</h4>
       <h1 class="hero-name">Sumit Chauhan</h1>
-      <h2 class="hero-role">UI &amp; UX Designer</h2>
+      <h2 class="hero-role">UI&UX Designer</h2>
       <p class="hero-desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque optio et delectus, nesciunt, eius voluptatum ea velit vero dolore eligendi soluta ad modi distinctio.
       </p>
@@ -78,7 +78,7 @@
       </div>
       <div class="skill-card">
         <i class="fa-brands fa-github"></i>
-        <h3>Git &amp; GitHub</h3>
+        <h3>Git &itHub</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi voluptas repellat accusantium cosider any learn.</p>
       </div>
       <div class="skill-card">
@@ -99,19 +99,21 @@
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-img">
-          <span class="project-label">Amazon</span>
+          <img src="IMAGE.png" style="width: 100%; height: auto;" alt="Amazon clone page screenshot">
           <span class="project-tag">Web design</span>
         </div>
         <div class="project-body">
           <h3>Amazon Clone Page</h3>
+          
+          
           <p>Built a fully responsive Amazon clone using HTML and CSS. Designed the homepage with a navigation bar, product sections, and banner layout.</p>
-          <a href="#" class="project-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://sumit-7500.github.io/amazon-clone/" class="project-link" target="_blank">View project <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="project-card coming-soon">
         <div class="project-img grey-img">
-          <span class="project-label grey-label">Next</span>
+          <span class="project-label grey-label" style ="width: auto; height: 277px;" >Next</span>
           <span class="project-tag grey-tag">Coming soon</span>
         </div>
         <div class="project-body">
@@ -140,25 +142,6 @@
       </form>
     </div>
   </section>
-
-  <!-- ===== JAVASCRIPT ===== -->
-  <script>
-    // Hamburger menu toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('main-menu');
-
-    navToggle.addEventListener('click', function () {
-      menu.classList.toggle('menu-open');
-    });
-
-    // Menu band karo jab koi link click kare (mobile par)
-    const menuLinks = menu.querySelectorAll('a');
-    menuLinks.forEach(function (link) {
-      link.addEventListener('click', function () {
-        menu.classList.remove('menu-open');
-      });
-    });
-  </script>
 
 </body>
 </html>
