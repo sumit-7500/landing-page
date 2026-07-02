@@ -48,6 +48,7 @@ img {
 
 .menu a.btn-orange {
   color: white !important;
+  
 }
 
 .section-header {
@@ -89,7 +90,7 @@ img {
 
 .logo {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 700;
   color: var(--text-dark);
 }
@@ -115,7 +116,7 @@ img {
   text-decoration: none;
   color: var(--text-dark);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size:20px;
 }
 
 .menu a:hover {
@@ -130,7 +131,9 @@ img {
   align-items: center;
   gap: 50px;
 }
-
+#home button{
+  margin-top: 25px;
+}
 
 .hero-text {
   flex: 1;
@@ -211,7 +214,7 @@ img {
 }
 
 .skills-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
