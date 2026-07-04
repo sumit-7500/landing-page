@@ -116,7 +116,7 @@ img {
   text-decoration: none;
   color: var(--text-dark);
   font-weight: 500;
-  font-size:20px;
+  font-size:18px;
 }
 
 .menu a:hover {
@@ -393,8 +393,20 @@ img {
   padding: 16px;
   font-size: 1rem;
   border-radius: 50px;
+  text-align: center;
+}
+.success-message{
+  display: none;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
+/* checkbox checked होने पर message दिखे */
+#success-toggle:checked ~ .success-message{
+  display: block;
+}
 @media (max-width: 720px) {
 
   /* Hamburger button dikhao */
