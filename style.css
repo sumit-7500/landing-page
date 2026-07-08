@@ -340,44 +340,7 @@ img {
   font-size: 0.9rem;
 }
 
-/* 
-.contact-section {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 70px 20px;
-}
 
-.contact-form-box {
-  padding: 0 10px;
-}
-
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--white);
-  padding: 15px 18px;
-  font-size: 0.95rem;
-  font-family: 'Inter', sans-serif;
-  color: var(--text-dark);
-  outline: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--orange);
-}
-
-/* Textarea - poori width mein */
 .contact-form textarea {
   grid-column: 1 / -1;
   min-height: 160px;
@@ -465,112 +428,267 @@ img {
    margin-top: 50px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 992px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-desc {
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-image-box {
+    width: min(320px, 70vw);
+  }
+
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+
   .contact-form {
     grid-template-columns: 1fr;
   }
 
   .contact-form textarea,
   .submit-btn {
-    grid-column: auto;
+    grid-column: 1 / -1;
   }
+
 }
 
-@media (max-width: 720px) {
 
-  /* Hamburger button dikhao */
+
+/* Mobile */
+@media (max-width:720px) {
+
+
+  /* Navbar */
+
   .nav-toggle {
     display: block;
   }
 
-  /* Menu chhupao by default */
-  .menu {
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 14px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
-    margin-top: 14px;
-    width: 100%;
-  }
 
-  /* Menu khulne par dikhao */
-  .menu.menu-open {
-    display: flex;
-  }
-
-  /* Header vertical layout */
   .header-inner {
     flex-wrap: wrap;
   }
 
 
-  .hero-section {
+  .menu {
+    display: none;
+    flex-basis: 100%;
+    width: 100%;
     flex-direction: column;
-    text-align: center;
-    padding: 50px 20px;
-    gap: 36px;
+    align-items: stretch;
+    gap: 10px;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid var(--border);
   }
+
+
+  .menu.menu-open {
+    display: flex;
+  }
+
+
+  .menu a {
+    text-align: center;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+
+
+  /* Hero */
+
+  .hero-section {
+    padding: 45px 20px;
+    gap: 35px;
+  }
+
 
   .hero-name {
     font-size: 2.2rem;
   }
 
+
   .hero-role {
     font-size: 1.4rem;
   }
 
+
   .hero-desc {
-    margin: 0 auto;
+    font-size: .95rem;
   }
 
-  .btn-orange {
-    margin: 0 auto;
+
+  .hero-image-box {
+    width: min(260px,75vw);
   }
+
+
+  #home button {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+  }
+
 
   .social-icons {
     justify-content: center;
   }
 
-  /* Contact form - ek column */
+
+
+  /* Skills */
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+
+  .skill-card {
+    flex: none;
+    width: 100%;
+  }
+
+
+
+  /* Projects */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .project-img {
+    min-height: 160px;
+  }
+
+
+
+  /* Contact */
+
   .contact-form {
     grid-template-columns: 1fr;
   }
 
-  .contact-form textarea {
-    grid-column: 1;
-  }
 
+  .contact-form textarea,
   .submit-btn {
     grid-column: 1;
   }
 
-  .projects-grid {
-  grid-template-columns: 1fr;
 }
 
-.skills-grid {
-  flex-direction: column;
-}
 
-.skill-card {
-  width: 100%;
-}
-}
 
-@media (max-width: 480px) {
+/* Small Mobile */
+@media (max-width:480px) {
+
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+
   .section-header h2 {
     font-size: 1.7rem;
   }
+
 
   .hero-name {
     font-size: 1.9rem;
   }
 
+
+  .hero-role {
+    font-size: 1.2rem;
+  }
+
+
+  .hero-image-box {
+    width: min(220px,70vw);
+  }
+
+
   .skills-section,
   .projects-section,
   .contact-section {
-    padding: 50px 16px;
+    padding:45px 15px;
   }
+
+
+  .project-label {
+    font-size:1.4rem;
+  }
+
+
+  .project-body {
+    padding:18px;
+  }
+
+
+  .contact-form input,
+  .contact-form textarea {
+    padding:13px 15px;
+  }
+
+
+  .footer-content {
+    font-size:.8rem;
+  }
+
+}
+
+
+
+/* Extra Small Phone */
+@media (max-width:360px) {
+
+
+  .hero-name {
+    font-size:1.6rem;
+  }
+
+
+  .hero-role {
+    font-size:1.1rem;
+  }
+
+
+  .hero-image-box {
+    width:190px;
+  }
+
+
+  .btn-orange {
+    width:100%;
+  }
+
 }
