@@ -215,14 +215,12 @@ img {
 
 .skills-grid {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
+  flex-wrap: wrap;
 }
 
 .skill-card {
-  background: var(--card-bg);
-  padding: 28px;
-  border-radius: 20px;
+  flex: 1 1 calc(25% - 22px);
 }
 
 .skill-card i {
@@ -342,7 +340,7 @@ img {
   font-size: 0.9rem;
 }
 
-
+/* 
 .contact-section {
   max-width: 1180px;
   margin: 0 auto;
@@ -386,27 +384,98 @@ img {
   resize: vertical;
 }
 
-/* Submit button - poori width mein */
+.contact-section {
+  max-width: 1180px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.contact-form-box {
+  max-width: 850px;
+  margin: auto;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #FD6F00;
+}
+
+.contact-form textarea {
+  grid-column: 1 / -1;
+  min-height: 170px;
+  resize: vertical;
+}
+
 .submit-btn {
   grid-column: 1 / -1;
   width: 100%;
   padding: 16px;
-  font-size: 1rem;
+  border: none;
   border-radius: 50px;
-  text-align: center;
-}
-.success-message{
-  display: none;
-  color: green;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 15px;
+  background: #FD6F00;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
 }
 
-/* checkbox checked होने पर message दिखे */
-#success-toggle:checked ~ .success-message{
-  display: block;
+.submit-btn:hover {
+  background: #e35f00;
 }
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: white;
+  border-top: 1px solid var(--border);
+  
+}
+
+.social-icons
+{
+  justify-content: center;
+
+
+}
+ 
+
+.footer{
+   background-color: #0f1111;
+   color: white;
+   margin-top: 50px;
+}
+
+@media (max-width:768px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form textarea,
+  .submit-btn {
+    grid-column: auto;
+  }
+}
+
 @media (max-width: 720px) {
 
   /* Hamburger button dikhao */
@@ -477,10 +546,17 @@ img {
     grid-column: 1;
   }
 
-  .skills-grid,
   .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
+}
+
+.skills-grid {
+  flex-direction: column;
+}
+
+.skill-card {
+  width: 100%;
+}
 }
 
 @media (max-width: 480px) {
